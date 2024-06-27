@@ -18,9 +18,15 @@ Automate engagement on Instagram by monitoring and responding to comments using 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your_username/instagram-comment-bot.git
+   git clone https://github.com/Sterile-Gaming/instabot.git
    cd instagram-comment-bot
-
+2. **Run the Setup Script:**
+   - On Unix-based systems:
+      ```bash
+      ./setup.sh
+   - On Windows systems:
+      ```bash
+      setup.bat
 ## Explanation:
 
 - **Description**: The README starts with a brief introduction to the Instagram Comment Bot.
