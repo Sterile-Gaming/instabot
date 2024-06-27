@@ -90,6 +90,7 @@ def respond_to_comments():
                         commenter_display_name = commenter_info.full_name if commenter_info.full_name else "User"
                         # Send a direct message
                         dm_text = reply_dm_text.format(keyword=keyword.upper(), display_name=commenter_display_name)
+                        dm_text = dm_text.replace("\\n", "\n")
                         cl.direct_send(dm_text, [comment.user.pk])
                         print(f"Replied and sent message to @{commenter_info.username} for comment '{keyword.upper()}'.")
                     else:
@@ -100,7 +101,7 @@ def respond_to_comments():
 try:
     while True:
         respond_to_comments()
-        time.sleep(60)
+        time.sleep(2)
 except KeyboardInterrupt:
     print("Script interrupted and stopped by user.")
 except Exception as e:
