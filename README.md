@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/downloads/release/python-3119/) 
 [![Instagram](https://img.shields.io/badge/Instagram-sterile.py-purple?style=flat-square&logo=instagram)](https://instagram.com/sterile.py/)
 [![dotenv](https://img.shields.io/badge/python--dotenv-v0.19.2-lightgreen.svg)](https://pypi.org/project/python-dotenv/)
-[![Pillow](https://img.shields.io/badge/Pillow-v8.4.0-yellow.svg)](https://pypi.org/project/pillow/)]
+[![Pillow](https://img.shields.io/badge/Pillow-v8.4.0-yellow.svg)](https://pypi.org/project/pillow/)
 
 Automate engagement on Instagram by monitoring and responding to comments using Python and instagrapi.
 
