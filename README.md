@@ -1,6 +1,6 @@
 # Instagram Comment Bot
 
-[![Python](https://img.shields.io/badge/Python-3.11.9-blue.svg)](https://www.python.org/downloads/release/python-3119/) 
+[![Python](https://img.shields.io/badge/Python-3.11.9-blue.svg?style=flat-square&logo=python)](https://www.python.org/downloads/release/python-3119/) 
 [![Instagram](https://img.shields.io/badge/Instagram-sterile.py-purple?style=flat-square&logo=instagram)](https://instagram.com/sterile.py/)
 [![dotenv](https://img.shields.io/badge/python--dotenv-v1.0.1-lightgreen.svg)](https://pypi.org/project/python-dotenv/)
 [![Pillow](https://img.shields.io/badge/Pillow-v10.3.0-yellow.svg)](https://pypi.org/project/pillow/)
@@ -21,7 +21,7 @@ Automate engagement on Instagram by monitoring and responding to comments using 
    git clone https://github.com/your_username/instagram-comment-bot.git
    cd instagram-comment-bot
 
-### Explanation:
+## Explanation:
 
 - **Description**: The README starts with a brief introduction to the Instagram Comment Bot.
 - **Features**: Highlights key functionalities of the bot.
