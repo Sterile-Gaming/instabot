@@ -37,8 +37,18 @@ Automate engagement on Instagram by monitoring and responding to comments using 
       # Instagram post URL (e.g., https://www.instagram.com/p/C8pT8GRSV-q/)
       INSTA_POST_URL=https://www.instagram.com/p/C8pT8GRSV-q/
 
+      # Toggle to send DM based on whether the keyword is found in the comment
+      # true - send DM only if the keyword is found
+      # false - send DM regardless of the keyword
+      SEND_DM_IF_KEYWORD=true
+
       # Keyword to look for in comments
       INSTA_KEYWORD=pack
+
+      # Toggle to send DM based on whether the commenter is following the user
+      # true - send DM only if the commenter is following
+      # false - send DM only if the commenter is not following
+      SEND_DM_IF_FOLLOWING=true
 
       # Reply text for comments containing the keyword
       # {keyword} - the keyword found in the comment
@@ -49,6 +59,7 @@ Automate engagement on Instagram by monitoring and responding to comments using 
       # {keyword} - the keyword found in the comment
       # {display_name} - the display name of the commenter
       REPLY_DM_TEXT=Hi {display_name}! Thank you for your comment '{keyword}'. How can I assist you?
+
 4. **Run the Bot:**
    - On Unix-based systems:
       ```bash
