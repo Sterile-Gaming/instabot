@@ -62,8 +62,12 @@ def respond_to_comments():
         # Fetch comments on the post
         comments = cl.media_comments(post_id)
         for comment in comments:
+            if comment.user.username == username :
+                    continue
+                
             # Check if the comment is new and contains the keyword
             if comment.pk not in processed_comments and comment.created_at_utc.timestamp() > start_time:
+                
                 if keyword in comment.text.lower() or not send_dm_if_keyword:
                     processed_comments.add(comment.pk)
                     username_to_reply = comment.user.username if comment.user.username else "user"
