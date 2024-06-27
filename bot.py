@@ -34,6 +34,14 @@ reply_dm_text = os.getenv("REPLY_DM_TEXT", "Hi {display_name}! Thank you for you
 send_dm_if_following = os.getenv("SEND_DM_IF_FOLLOWING", "true").lower() == "true"
 send_dm_if_keyword = os.getenv("SEND_DM_IF_KEYWORD", "true").lower() == "true"
 
+# Check for existence of message.txt to set REPLY_DM_TEXT
+if os.path.exists("message.txt"):
+    with open("message.txt", "r") as f:
+        lines = f.readlines()
+        reply_dm_text = "\n".join(line.strip() for line in lines)
+else:
+    reply_dm_text = os.getenv("REPLY_DM_TEXT", "Hi {display_name}! Thank you for your comment '{keyword}'. How can I assist you?")
+
 # Extract shortcode from the post URL using regex
 shortcode_match = re.search(r'(?:/p/|/reel/|/tv/)([^/?]+)', post_url)
 if not shortcode_match:
